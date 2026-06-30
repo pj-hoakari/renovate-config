@@ -1,0 +1,26 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["config:best-practices"],
+    "minimumReleaseAge": "7 days",
+    "internalChecksFilter": "strict",
+    "timezone": "Asia/Tokyo",
+    "osvVulnerabilityAlerts": true,
+    "vulnerabilityAlerts": {
+        "labels": ["security"],
+        "minimumReleaseAge": null
+    },
+    "packageRules": [
+        {
+            "description": "Automerge non-breaking minor updates individually",
+            "matchUpdateTypes": ["minor"],
+            "matchJsonata": ["isBreaking != true"],
+            "automerge": true
+        },
+        {
+            "description": "Automerge non-breaking patch and digest updates individually",
+            "matchUpdateTypes": ["patch", "digest"],
+            "matchJsonata": ["isBreaking != true"],
+            "automerge": true
+        }
+    ]
+}
