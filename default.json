@@ -23,7 +23,12 @@
 			"matchJsonata": ["isBreaking != true"],
 			"automerge": true,
 			"addLabels": ["automerge"]
+		},
+		{
+			"matchUpdateTypes": ["lockFileMaintenance"],
+			"minimumReleaseAge": null
 		}
 	],
 	"platformAutomerge": true
 }
+
