@@ -29,6 +29,11 @@
             "minimumReleaseAge": null
         },
         {
+            "description": "Update the shared composite actions without waiting",
+            "matchPackageNames": ["pj-hoakari/actions"],
+            "minimumReleaseAge": null
+        },
+        {
             "description": "Bump go directive in go.mod to the latest Go release",
             "matchManagers": ["gomod"],
             "matchDepNames": ["go"],
