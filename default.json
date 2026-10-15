@@ -43,19 +43,25 @@
         {
             "description": "Group Go version updates: go/toolchain directives in go.mod",
             "matchDatasources": ["golang-version"],
-            "groupName": "Go version"
+            "groupName": "Go version",
+            "internalChecksFilter": "none",
+            "platformAutomerge": false
         },
         {
             "description": "Group Go version updates: mise and asdf (github-tags golang/go)",
             "matchDatasources": ["github-tags"],
             "matchPackageNames": ["golang/go"],
-            "groupName": "Go version"
+            "groupName": "Go version",
+            "internalChecksFilter": "none",
+            "platformAutomerge": false
         },
         {
             "description": "Group Dockerfile golang image updates with the Go version group",
             "matchDatasources": ["docker"],
             "matchPackageNames": ["/(^|/)golang$/"],
-            "groupName": "Go version"
+            "groupName": "Go version",
+            "internalChecksFilter": "none",
+            "platformAutomerge": false
         }
     ],
     "platformAutomerge": true
