@@ -3,6 +3,7 @@
     "extends": ["config:best-practices"],
     "minimumReleaseAge": "7 days",
     "internalChecksFilter": "strict",
+    "postUpdateOptions": ["gomodTidy"],
     "timezone": "Asia/Tokyo",
     "osvVulnerabilityAlerts": true,
     "vulnerabilityAlerts": {
